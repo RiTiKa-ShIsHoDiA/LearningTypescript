@@ -1,0 +1,16 @@
+
+/************* Syllabus ***********/
+Data Types
+Conditions
+Loops
+Function
+Generics
+Narrowing & Widening
+Interfaces
+Enums
+OOPs
+Type Queries
+Conditional Types
+Utility Types
+Mapped Types
+Modules
