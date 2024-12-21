@@ -6,12 +6,12 @@ type User = {
 }
 
 type authUser = {
-    gmail : string;
-    id : number;
+    email : string
+    ids : number
 }
 
 let user : User | authUser = { name :"ritika" , id : 304};
 
 console.log(user);
 
-user = {gmail : "ritika@dev", id : 304}
+user = {email : "ritika@dev", ids : 304}
