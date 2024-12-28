@@ -4,11 +4,13 @@ Data Types
 Conditions
 Loops
 Function
-Generics
-Narrowing & Widening
 Interfaces
 Enums
+
 OOPs
+
+Generics
+Narrowing & Widening
 Type Queries
 Conditional Types
 Utility Types
