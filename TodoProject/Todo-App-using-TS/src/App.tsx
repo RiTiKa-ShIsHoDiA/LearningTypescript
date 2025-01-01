@@ -1,15 +1,18 @@
-import { useState ,FC} from 'react'
-import { Greetings } from './Components/Greetings'
+import { useState, FC } from "react";
+import { Greetings } from "./Components/Greetings";
+import { AddTodo } from "./Components/AddTodo";
 
-const App:FC = ()=> {
-
+const App: FC = () => {
   return (
     <>
-      <div className='' >
-          <Greetings/>
+      <div className="header">
+        <Greetings />
+      </div>
+      <div className="section">
+        <AddTodo />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

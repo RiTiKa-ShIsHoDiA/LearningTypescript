@@ -7,13 +7,17 @@ export const Greetings = () => {
     else return "Good Evening";
   };
 
-  console.log("../assets/hiImage.png");
 
   return (
-    <div className="flex w-2/3 ">
-      <img src={path} alt="helloImage"  />
+    <div className="flex justify-center">
+      <div className="flex w-1/2  p-5 mx-auto my-5 justify-center">
+        <img src={path} alt="helloImage" />
 
-      <h1 className="text-4xl text-bold flex items-center px-2"> {getGreeting()}</h1>
+        <h1 className="text-4xl text-bold flex items-center px-2 font-bold">
+          {" "}
+          {getGreeting()}
+        </h1>
+      </div>
     </div>
   );
 };
