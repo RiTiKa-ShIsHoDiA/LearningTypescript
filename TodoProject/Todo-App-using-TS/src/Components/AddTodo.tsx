@@ -16,12 +16,21 @@ export const AddTodo: FC = () => {
 
   //addTodo
   const addTodo = () => {
-    const newTask = {
-      taskDescription: task,
-      id: nanoid(),
-      isCompleted: false,
-    };
-    setTaskList([...taskList, newTask]);
+     
+    var existingTask = localStorage.getItem('todo') 
+    console.log(existingTask);
+    const todos:Array<ITask> = existingTask ? JSON.parse(existingTask) : []
+    todos?.push({
+        taskDescription: task,
+        id: nanoid(),
+        isCompleted: false,
+      });
+
+    localStorage.setItem('todo', JSON.stringify(todos));
+
+    // const items = JSON.parse(data);
+    // console.log(items);
+    // setTaskList([...items]);
     setTask("");
   };
 
